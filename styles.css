@@ -1,0 +1,204 @@
+body {
+    font-family: 'Spartan', sans-serif;
+    color: rgba(0, 0, 0, 0.822);
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.822);
+}
+
+a:hover {
+    color: brown;
+}
+
+h1 {
+    margin: 0;
+}
+
+
+/* header */
+
+header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background-color: rgb(204, 238, 238);
+    height: 50px;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+
+
+#site-title {
+    font-size: 1.2em;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+#navbar {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#navbar a {
+    padding-left: 20px;
+}
+
+
+
+
+
+/* main */
+
+section {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#welcome-section {
+    height: 100vh;
+
+}
+
+#welcome-section img {
+    width: 400px;
+    height: 400px;
+    margin: 20px auto;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+
+#projects h1 {
+    text-align: center;
+}
+
+#projects {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: rgb(204, 238, 238);
+    padding: 20px;
+    width: 100%;
+
+}
+
+#projects-all {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.project-tile {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 300px;
+    margin: 5px 35px;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 10px;
+}
+
+.project-img {
+    width: 100%;
+}
+
+.project-link {
+    margin: 20px auto 10px auto;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .project-tile {
+        width: 200px;
+    }
+
+    .project-link {
+        margin: 10px auto 5px auto;
+    }
+
+    .contact-link {
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+
+
+    #welcome-section img {
+        width: 300px;
+        height: 300px;
+
+    }
+
+    #projects-all {
+        flex-flow: column nowrap;
+    }
+
+    .project-tile {
+        width: 80%;
+        height: fit-content;
+        margin: 20px auto;
+    }
+
+
+
+}
+
+.contact-link {
+    margin: 10px;
+}
+
+
+#github-logo,
+#email-logo {
+    width: 20px;
+    margin-right: 5px;
+}
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(204, 238, 238);
+    height: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 0.7em;
+}
+
